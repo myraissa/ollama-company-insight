@@ -1,14 +1,14 @@
-🧠 Company Website Brochure Generator
+### 🧠 Company Website Brochure Generator
 This project automatically scrapes a company’s website, extracts relevant information (like “About,” “Careers,” “Products,” etc.), and uses a local Ollama LLM (e.g., llama3.2) to generate a company brochure in Markdown format.
-🚀 Features
 
+#### 🚀 Features
 Scrapes webpages and subpages using requests and BeautifulSoup.
 Automatically filters relevant links (e.g., About, Products, Careers).
 Integrates with Ollama to summarize and create a polished company brochure.
 Supports streamed generation for live token-by-token output.
 Outputs the final brochure in Markdown format.
 
-🧩 Requirements
+### 🧩 Requirements
 Python Libraries
 Install dependencies:
 pip install requests beautifulsoup4 ipython
@@ -23,20 +23,20 @@ Verify Ollama is running:curl http://localhost:11434/api/generate -d '{"model":"
 
 
 
-⚙️ Configuration
+### ⚙️ Configuration
 You can modify the configuration in the script:
 OLLAMA_URL = "http://localhost:11434/api/generate"
 MODEL = "llama3.2"
 
 Change these values if using a different model or remote server.
-🧠 How It Works
 
+### 🧠 How It Works
 Website Scraping: Fetches the landing page, extracts visible text, and gathers links.
 Link Selection: The model classifies which links are relevant for a brochure.
 Content Extraction: Retrieves content from relevant pages.
 Brochure Generation: Sends the extracted content to the model to create a concise, Markdown-formatted company brochure.
 
-🧪 Usage
+### 🧪 Usage
 Run the script directly:
 python brochure_generator.py
 
@@ -47,7 +47,7 @@ You can modify the target:
 stream_brochure("OpenAI", "https://openai.com")
 
 📄 Example Output
-# OpenAI Brochure
+### OpenAI Brochure
 
 **About Us**  
 OpenAI is an AI research company focused on developing safe and beneficial artificial intelligence...
